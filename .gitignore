@@ -2,13 +2,3 @@
 __pycache__/
 *.pyc
 *.pyo
-
-# Individual files you want to ignore
-Calculate.py
-Classes&objects.py
-Dictionaries.py
-Functions.py
-IntegerToRoman.py
-LongestCommonPrefix.py
-PalindromeNumber.py
-math_utils_module.py
