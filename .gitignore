@@ -1,0 +1,23 @@
+# Ignore __pycache__ folders
+__pycache__/
+
+# Ignore authentication file
+auth.json
+
+# Ignore user data directory
+user_data/
+
+# Ignore job scraper utility script
+job_scraper_utils.py
+
+# Common Python ignores
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+# Virtual environments
+venv/
+.env/
+virtualenv/
