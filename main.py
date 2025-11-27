@@ -31,7 +31,7 @@ async def scrape_indeed(job, location, days=3, max_pages=5):
                 f"fromage={days}&start={start}"
             )
 
-            print(f"\n🌐 Page {page_num + 1} → {url}")
+            print(f"\n Page {page_num + 1} → {url}")
             await page.goto(url, timeout=0)
             #await asyncio.sleep(9999999)
 
@@ -46,7 +46,7 @@ async def scrape_indeed(job, location, days=3, max_pages=5):
                 break
 
             job_cards = await page.query_selector_all("td.resultContent")
-            print(f"✔ Found {len(job_cards)} jobs")
+            print(f" Found {len(job_cards)} jobs")
 
             if not job_cards:
                 break
@@ -93,7 +93,7 @@ async def scrape_indeed(job, location, days=3, max_pages=5):
         #print(df)
         output_file = "indeed_results.csv"
         df.to_csv(output_file, index=False, encoding="utf-8-sig")
-        print(f"\n💾 Saved {len(all_results)} jobs to {output_file}")
+        print(f"\n Saved {len(all_results)} jobs to {output_file}")
 
         await context.close()
 

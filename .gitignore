@@ -7,9 +7,6 @@ auth.json
 # Ignore user data directory
 user_data/
 
-# Ignore job scraper utility script
-job_scraper_utils.py
-
 # Common Python ignores
 *.pyc
 *.pyo
